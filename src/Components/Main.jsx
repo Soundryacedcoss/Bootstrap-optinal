@@ -1,10 +1,11 @@
 import React from "react";
 import MyResponsiveLine from "./LineChart";
 import MyResponsivePie from "./MyResponsivePie";
+import { News } from "./News";
+import MyResponsiveRadar from "./Radar";
 import RecentActivity from "./RecentActivity";
 import { RecentSale } from "./RecentSale";
 import { TrandingSale } from "./TrandingSale";
-
 export const Main = () => {
   return (
     <div style={{ marginLeft: "4%" }}>
@@ -62,7 +63,7 @@ export const Main = () => {
               </div>
             </div>
           </div>
-          {/* <div> */}
+
           {/* CUSTOMER CARD */}
           <div className="Customercard">
             <div>
@@ -101,7 +102,7 @@ export const Main = () => {
           <div
             style={{
               height: "450px",
-              width: "63%",
+              width: "83%",
               marginTop: "3%",
               backgroundColor: "white",
             }}
@@ -111,7 +112,7 @@ export const Main = () => {
           </div>
           <div
             style={{
-              width: "63%",
+              width: "83%",
               marginTop: "3%",
               padding: "4%",
               backgroundColor: "white",
@@ -122,7 +123,7 @@ export const Main = () => {
           </div>
           <div
             style={{
-              width: "63%",
+              width: "83%",
               marginTop: "3%",
               padding: "4%",
               backgroundColor: "white",
@@ -130,27 +131,54 @@ export const Main = () => {
           >
             <TrandingSale />
           </div>
-          
         </div>
-        <div style={{ width: "20%" }} className="mt-3">
-          <div style={{marginLeft:"-10%",width:"20%"}}>
-          <RecentActivity/>
+        <div style={{ width: "20%" }} className="mt-3 col-2-row2">
+          <div style={{ width: "100%", marginLeft: "10%", marginTop: "-10%" }}>
+            <RecentActivity />
           </div>
-          
-     
+          <div
+            style={{
+              width: "140%",
+              height: "400px",
+              marginLeft: "-30%",
+              backgroundColor: "white",
+            }}
+            className="shadow mb-5"
+          >
+            <MyResponsiveRadar />
+          </div>
           <div
             className="shadow"
             style={{
               height: "400px",
-              width: "110%",
+              width: "140%",
               padding: "4%",
-              marginLeft: "-9%",
+              marginLeft: "-30%",
               backgroundColor: "white",
             }}
           >
             <MyResponsivePie />
           </div>
+          <div
+            className="shadow mt-5"
+            style={{
+              padding: "4%",
+              width: "140%",
+              marginLeft: "-30%",
+              fontSize: "1.3vw",
+            }}
+          >
+            <News />
+          </div>
         </div>
+      </div>
+      <hr />
+      <div className="Footer">
+        <footer>
+          <a href="https://bootstrapmade.com/demo/NiceAdmin/">
+            © Copyright NiceAdmin. All Rights Reserved
+          </a>
+        </footer>
       </div>
     </div>
   );

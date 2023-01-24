@@ -3,38 +3,25 @@ import { MDBCol, MDBContainer, MDBRow } from "mdb-react-ui-kit";
 
 export default function RecentActivity() {
   return (
-    <MDBContainer className="py-5">
+
+    <MDBContainer className="py-5" style={{ width: "100%" }}>
       <MDBRow>
         <MDBCol>
           <div id="content">
             <ul className="timeline-1 text-black">
               <li className="event" data-date="12:30 - 1:00pm">
-                <h4 className="mb-3">Registration</h4>
-                <p>
-                  Get here on time, it's first come first serve. Be late, get
-                  turned away.
-                </p>
+                <p>Quia quae rerum explicabo officiis beatae</p>
               </li>
               <li className="event" data-date="2:30 - 4:00pm">
-                <h4 className="mb-3 pt-3">Opening Ceremony</h4>
                 <p>
-                  Get ready for an exciting event, this will kick off in amazing
-                  fashion with MOP &amp; Busta Rhymes as an opening show.
+                Est sit eum reiciendis exercitationem
                 </p>
               </li>
               <li className="event" data-date="5:00 - 8:00pm">
-                <h4 className="mb-3 pt-3">Main Event</h4>
-                <p>
-                  This is where it all goes down. You will compete head to head
-                  with your friends and rivals. Get ready!
-                </p>
+                <p>Voluptatem blanditiis blanditiis eveniet</p>
               </li>
               <li className="event" data-date="8:30 - 9:30pm">
-                <h4 className="mb-3 pt-3">Closing Ceremony</h4>
-                <p className="mb-0">
-                  See how is the victor and who are the losers. The big stage is
-                  where the winners bask in their own glory.
-                </p>
+                <p className="mb-0">Voluptates corrupti molestias voluptatem</p>
               </li>
             </ul>
           </div>
