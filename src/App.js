@@ -4,8 +4,12 @@ import { Navbar } from "./Components/Navbar";
 function App() {
   return (
     <div className="App">
+      <div id="navbar">
       <Navbar />
-      <Main/>
+      </div>
+      <div id="main">
+        <Main />
+      </div>
     </div>
   );
 }

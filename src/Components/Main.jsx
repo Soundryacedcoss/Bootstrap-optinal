@@ -8,7 +8,7 @@ import { RecentSale } from "./RecentSale";
 import { TrandingSale } from "./TrandingSale";
 export const Main = () => {
   return (
-    <div style={{ marginLeft: "4%" }}>
+    <div style={{ marginLeft: "4%" }} id="main1">
       <div>
         <h2>Dashboard</h2>
         <h6>Home/Dashboard</h6>

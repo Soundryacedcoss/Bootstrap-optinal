@@ -16,22 +16,7 @@ function Sidebar() {
 
   return (
     <>
-      <i
-        onClick={handleShow}
-        style={{
-          fontSize: "27px",
-          color: "blue",
-          marginRight: "1em",
-          cursor: "pointer",
-        }}
-        class="fas fa-bars"
-      ></i>
-
-      <Offcanvas
-        style={{ marginTop: "5em", width: "21em", color: "#00296f" }}
-        show={show}
-        onHide={handleClose}
-      >
+      
         <Offcanvas.Header closeButton>
           <Offcanvas.Title>
             <div style={{ fontSize: "22px" }}>
@@ -175,7 +160,7 @@ function Sidebar() {
             <i class="far fa-file"></i> Blank
           </div>
         </Offcanvas.Body>
-      </Offcanvas>
+
     </>
   );
 }
